@@ -275,6 +275,14 @@ fixtures = [
         ]
        
     ]},
+    {"dt":"Role","filters": [
+        [ 
+            "name","in", [
+            "Quotation Approver","Quotation Reviewer"
+        ]
+        ]
+       
+    ]},
     {"dt":"Workflow State","filters": [
         [ 
             "name","in", [

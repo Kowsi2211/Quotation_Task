@@ -12,18 +12,18 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-10 21:38:56.803832",
-  "name": "Draft",
+  "modified": "2025-07-10 21:39:21.559238",
+  "name": "Submitted",
   "style": "",
-  "workflow_state_name": "Draft"
+  "workflow_state_name": "Submitted"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-10 21:39:21.559238",
-  "name": "Submitted",
+  "modified": "2025-07-10 21:38:56.803832",
+  "name": "Draft",
   "style": "",
-  "workflow_state_name": "Submitted"
+  "workflow_state_name": "Draft"
  }
 ]

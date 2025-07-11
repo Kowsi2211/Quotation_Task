@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "autoname": "format:{project_title}-{QT}-{MM}{YYYY}-{###}",
+ "creation": "2025-07-10 11:59:09.070445",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_section_section",
+  "customer_name",
+  "customer_contact_number",
+  "column_break_pnuo",
+  "customer_email",
+  "address",
+  "project_details_section",
+  "project_title",
+  "project_id",
+  "start_date",
+  "end_date",
+  "duration",
+  "created_by",
+  "quotation",
+  "status",
+  "column_break_nabp",
+  "project_type",
+  "site_location",
+  "project_manager",
+  "attachment",
+  "created_on",
+  "section_break_akcq",
+  "items_table",
+  "section_break_sfnw",
+  "total_quantity",
+  "column_break_lsrh",
+  "total_amount",
+  "section_break_c6us",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_c6us",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Quotation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "no_copy": 1,
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_contact_number",
+   "fieldtype": "Data",
+   "label": "Customer Contact Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "ignore_xss_filter": 1,
+   "label": "Address ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Title",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Project"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "Interior\nExterior\nLandscaping\nElectrical"
+  },
+  {
+   "fieldname": "site_location",
+   "fieldtype": "Small Text",
+   "label": "Site Location"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment "
+  },
+  {
+   "default": "__user",
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation ",
+   "no_copy": 1,
+   "options": "Quotation"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status ",
+   "no_copy": 1,
+   "options": "Open\nCompleted\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_section_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Section"
+  },
+  {
+   "fieldname": "section_break_akcq",
+   "fieldtype": "Section Break",
+   "label": "Quotation Items"
+  },
+  {
+   "fieldname": "column_break_pnuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nabp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "items_table",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Quotation Items"
+  },
+  {
+   "fieldname": "section_break_sfnw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_quantity",
+   "fieldtype": "Data",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lsrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-11 11:51:06.914991",
+ "modified_by": "Administrator",
+ "module": "Quotation Kowsalya",
+ "name": "Job Quotation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

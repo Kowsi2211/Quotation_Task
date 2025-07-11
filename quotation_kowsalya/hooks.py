@@ -242,3 +242,53 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt":"Property Setter","filters": [
+        [ 
+            "name","in", [
+            "Quotation Item-uom-link_filters"
+        ]
+        ]
+       
+    ]},
+    {"dt":"Custom Field","filters": [
+        [ 
+            "name","in", [
+            "Job Quotation-workflow_state"
+        ]
+        ]
+       
+    ]},
+    {"dt":"Workflow","filters": [
+        [ 
+            "name","in", [
+            "Job Quotation Workflow"
+        ]
+        ]
+       
+    ]},
+    {"dt":"Report","filters": [
+        [ 
+            "name","in", [
+            "Job Quotation Report"
+        ]
+        ]
+       
+    ]},
+    {"dt":"Workflow State","filters": [
+        [ 
+            "name","in", [
+            "Reviewed","Submitted","Draft"
+        ]
+        ]
+       
+    ]},
+    {"dt":"Workflow Action Master","filters": [
+        [ 
+            "name","in", [
+            "Edit","Submit","Review","Approve","Reject"
+        ]
+        ]
+       
+    ]},
+]

@@ -81,14 +81,7 @@ frappe.ui.form.on("Job Quotation", {
 	// onsubmit function
 
 	before_workflow_action: function (frm) {
-		// total quantity validation
-		// if (doc.total_quantity == 0) {
-		// 	frappe.validated = false;
-		// 	frm.set_value("workflow_state", "Draft");
-		// 	frm.save();
-		// 	frappe.throw(__("Unable to submit: Total quantity cannot be zero or empty"));
-		// 	return false;
-		// }
+		
 
 		// dialog api
 		var action = frm.selected_workflow_action;

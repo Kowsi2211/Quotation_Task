@@ -9,21 +9,7 @@ from frappe.utils import  days_diff
 class JobQuotation(Document):
 	pass
                   
-#       def before_submit(doc, method):
-#     # Validate total_quantity before submission
-#             if not doc.total_quantity or doc.total_quantity <= 0:
-#                   frappe.throw("Total Quantity must be greater than zero. Cannot Submit.")
-    
-#     # Optionally reset workflow_state if validation fails
-#             doc.workflow_state = "Draft"
-#             doc.save()  # This will prevent submission
 
-# 	# def before_submit(doc):
-# 	# 	if(doc.total_quantity == 0):
-# 	# 	    frappe.throw("Unable to submit there was no quantity in item")
-
-	
-		
 # fetching the values from customer doctype
 @frappe.whitelist()
 def get_values(cust_name):

@@ -246,7 +246,7 @@ fixtures = [
     {"dt":"Property Setter","filters": [
         [ 
             "name","in", [
-            "Quotation Item-uom-link_filters"
+            "Quotation Item-uom-link_filters","Item-stock_uom-link_filters"
         ]
         ]
        

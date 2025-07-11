@@ -133,17 +133,7 @@ frappe.ui.form.on("Job Quotation", {
 						frm.set_value("workflow_state", "Draft");
 						frm.save();
 					}
-					if (frm.doc.item_table ) {
-						frm.doc.item_table.forEach((item) => {
-							if (!item.task_description ) {
-								frappe.show_alert(
-									"Task Description is required"
-								);
-								frm.set_value("workflow_state", "Draft");
-								frm.save();
-							}
-						});
-					}
+					
 					d.hide();
 
 					frm.save().then(function () {
@@ -278,9 +268,7 @@ frappe.ui.form.on("Quotation Items", {
 								},
 							};
 						});
-					} else {
-						console.log("not");
-					}
+					} 
 				},
 			});
 		} else {
@@ -290,6 +278,7 @@ frappe.ui.form.on("Quotation Items", {
 			frappe.throw("Enter the customer and quotation details");
 		}
 	},
+	
 });
 
 //for date differnce

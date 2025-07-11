@@ -3,8 +3,8 @@
 
 frappe.ui.form.on("Job Quotation", {
 	//for updating read only property for customer details
+	
 	refresh(frm) {
-		console.log(frm.doc.admit);
 
 		if (frm.doc.customer_name) {
 			frappe.call({
@@ -70,14 +70,14 @@ frappe.ui.form.on("Job Quotation", {
 				d.show();
 			});
 		}
+		
+		setTimeout(() => {
+            // Hide all buttons or links that say "Edit"
+            $("a.dropdown-item:contains('Edit'), button.dropdown-item:contains('Edit')").hide();
+        }, 500);
+		
 	},
-	validate(frm) {
-		if (!frm.is_dirty() && frm.doc.workflow_state == "Draft") {
-			if (doc.total_quantity == 0) {
-				frappe.throw("Unable to submit there was no quantity in item");
-			}
-		}
-	},
+	
 	// onsubmit function
 
 	before_workflow_action: function (frm) {
